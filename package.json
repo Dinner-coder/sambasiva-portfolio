@@ -1,8 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./index.html'],
-  theme: {
-    extend: {},
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Interactive portfolio website",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./styles.css --watch"
   },
-  plugins: [],
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
 }
